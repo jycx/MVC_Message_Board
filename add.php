@@ -4,7 +4,7 @@
 
 <?php
 include"./model/DB.class.php";
-
+include "./config/config.php";
 
  $name=$_POST[name];
  $email=$_POST[email];
@@ -13,7 +13,7 @@ include"./model/DB.class.php";
  $info=$_POST[info];
 
  $add= new DB();
- $add->dbInsert($name,$email,$qq,$sex,$info);
+ $add->dbInsert($name,$email,$qq,$sex,$info,$config);
  
 ?>	
 	 

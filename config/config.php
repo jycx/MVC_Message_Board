@@ -1,7 +1,7 @@
 <?php
 //数据库配置文件
  
-    	$config=array(
+    	return $config=array(
 	  'host'=>'localhost',
 	  'user'=>'root',
 	  'password'=>'',
