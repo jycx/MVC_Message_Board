@@ -1,0 +1,35 @@
+﻿<head>
+<title>INFO LIST</title>
+<style> 
+body{background-color:#cce}
+th{ width:400px;}
+td{width:400px;
+text-align:center;}
+
+</style>
+</head>
+
+ <body>
+ 
+ <h1 align="center">INFO LIST </h1>
+ <hr>
+    <table border=1 cellpadding=13 cellspacing=0>
+       <tr  >
+             <th > NAME </th>  <th>EMAIL</th>  <th>QQ</th>  <th>SEX</th>  <th>MESSAGE</th>   
+       </tr>
+	    
+	   <?php  foreach ($list as  $k=>$v) {?>
+	  <tr>
+	          <!-- 两种方法实现
+	         <td>  <?php //echo $list[$k][name];?>  </td><td>  <?php //echo $list[$k][email];?>  </td><td>  <?php// echo $list[$k][qq];?>  </td><td>  <?php //echo $list[$k][sex];?>  </td><td>  <?php //echo $list[$k][info];?>  </td>
+			 -->
+             <td>  <?php echo $v[name];?>  </td><td>  <?php echo $v[email];?>  </td><td>  <?php echo $v[qq];?>  </td><td>  <?php echo $v[sex];?>  </td><td>  <?php echo $v[info];?>  </td>
+        </tr>
+	   <?php } ?>
+	  
+   </table>
+
+</body>
+
+ 
+ 
