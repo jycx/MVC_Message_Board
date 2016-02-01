@@ -1,20 +1,24 @@
 ﻿ <html>
  <head>
+ <link rel="stylesheet" href="../vendor/twbs/bootstrap/dist/css/bootstrap.min.css">
+   
+   <script src="../vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
  <style>
  body{ background-color:#ccc}
  
 </style>
 </head>
  <body>
-<div id="input">
-<form method="post" action="../add.php" name="form" align="center">
+ 
+<form method="post" action="../add.php" name="form" align="center" role="form" class="form-inline">
 <h1>Message Board</h1>
-<p>Name ：<input type="text" name="name" size="20" class="y" />&nbsp;</p>
-<p>Sex ：<input name="sex" type="radio" value="boy" checked/>&nbsp;BOY&nbsp;<input type="radio" name="sex" value="girl"/>&nbsp;GIRL</p>
-<p>QQ　：<input type="text" name="qq" class="y" />&nbsp;(可选填)</p>
-<p>Email：<input type="text" name="email" class="y" />&nbsp;(可选填)</p>
+<div class="form-group">
+<p>Name ：<input type="text" name="name" size="20" class="y"  class="form-control" placeholder="enter your name"/>&nbsp;</p>
+<p>Sex ：<input name="sex" type="radio" value="boy"  class="form-control" checked/>&nbsp;BOY&nbsp;<input type="radio" name="sex" value="girl"  class="form-control"/>&nbsp;GIRL</p>
+<p>QQ　：<input type="text" name="qq" class="y"  class="form-control"  />&nbsp; </p>
+<p>Email：<input type="text" name="email" class="y"   class="form-control" />&nbsp; </p>
 <p>content：</p>
-<p><textarea name="info" rows="5" cols="40"></textarea></p>
+<p><textarea name="info" rows="5" cols="40" class="form-control"></textarea></p>
 <p class="cen">
 <input type="submit" value="submit" />
 <input type="reset" value="rewrite">
